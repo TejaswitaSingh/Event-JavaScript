@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diary App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="nav_conatiner">
+            <a href="index.html">
+                <h4>TIMELESS VASTU</h4>
+            </a>
+            <ul class="nav_menu">
+                <li><a href="#slidergg">SLIDER</a></li>
+                <li><a href="#todogg">TO-DO</a></li>
+                <li><a href="#notesgg">NOTES</a></li>
+                <li><a href="#faqgg">FAQ</a></li>
+                <li><a href="#colorgg">COLOR</a></li>
+                <li><a href="#formgg">FORM</a></li>
+            </ul>
+            <button class="nav-toggle-btn" id="nav-toggle-open"><i class="fa-solid fa-bars-staggered"></i></button>
+            <button class="nav-toggle-btn" id="nav-toggle-close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- section-slider -->
+    <div style="position: relative; width: 100%;
+     height: 100vh;">
+        <div class="slider-container" id="slidergg">
+            <div class="slider">
+                <div class="slides" style="--img: url(/img/1.jpg);">
+                    <div class="slide-content">
+                        <h2>The Golden Temple, Amritsar, India</h2>
+                        <p>A spiritual and architectural masterpiece, its gold-plated façade and dome symbolize purity
+                            and divine connection.</p>
+                    </div>
+                </div>
+                <div class="slides" style="--img: url(/img/2\ \(2\).jpg);">
+                    <div class="slide-content">
+                        <h2>Saint Basil's Cathedral, Moscow, Russia</h2>
+                        <p>Famous for its colorful domes, the cathedral also features golden accents, showcasing the
+                            opulence of Russian Orthodox architecture.</p>
+                    </div>
+                </div>
+                <div class="slides" style="--img: url(/img/4.jpg);">
+                    <div class="slide-content">
+                        <h2>The Dome of the Rock, Jerusalem, Israel</h2>
+                        <p>This Islamic shrine is adorned with a magnificent gold dome, representing its religious and
+                            cultural significance.</p>
+                    </div>
+                </div>
+                <div class="slides" style="--img: url(/img/6.jpg);">
+                    <div class="slide-content">
+                        <h2>Schönbrunn Palace, Vienna, Austria</h2>
+                        <p>The opulent interiors of this Baroque palace are richly decorated with gold details,
+                            epitomizing royal grandeur.</p>
+                    </div>
+                </div>
+                <div class="slides" style="--img: url(/img/4.webp);">
+                    <div class="slide-content">
+                        <h2>Grand Palace, Bangkok, Thailand</h2>
+                        <p>A royal residence, its temples and structures are lavishly gilded, reflecting Thai cultural
+                            and spiritual heritage.</p>
+                    </div>
+                </div>
+                <div class="slides" style="--img: url(/img/9.jpg);">
+                    <div class="slide-content">
+                        <h2>Burj Al Arab, Dubai, UAE</h2>
+                        <p>Known for its luxury, the interiors are adorned with 24-karat gold, embodying modern
+                            architectural splendor and extravagance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-buttons">
+                <span class="prev-slider"></span>
+                <span class="next-slider"></span>
+            </div>
+        </div>
+    </div>
+    <!-- section-slider -->
+
+    <!-- section-todo -->
+    <div class="todo-background" id="todogg">
+        <ul class="todo-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="todo-container">
+        <div class="todo-app">
+            <h2>To-Do List <i class="fa-solid fa-list"></i></h2>
+            <div class="todo-row">
+                <input type="text" placeholder="Add your text" id="todo-inputBox">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+                <!-- <li class="checked">Task1</li>
+                <li>Task2</li>
+                <li>Task3</li> -->
+            </ul>
+        </div>
+    </div>
+    <!-- section-todo -->
+
+    <!-- section-sticky notes -->
+    <main id="notesgg">
+        <form action="" style="border: 2px solid g;">
+            <input type="color" id="color" value="#e6b905">
+            <button type="button" id="createBtn">+</button>
+        </form>
+        <div id="list-notes">
+        <div id="list">
+
+        </div>
+    </div>
+    </main>
+    <!-- section-sticky notes -->
+
+    <!-- FAQ -->
+    <h1 id="faqgg">FAQs</h1>
+    <div class="accordion">
+        <div class="accordion-item">
+            <div class="accordion-item-header">
+                Why is gold used in architecture?
+            </div>
+            <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                    Gold has been used in architecture for centuries due to its symbolic value, durability, and
+                    aesthetic appeal. It signifies wealth, divinity, and prestige, often adorning religious structures,
+                    palaces, and monuments. Its reflective qualities also make it visually striking in sunlight.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-item-header">
+                How is gold applied to architectural structures?
+            </div>
+            <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                    Gold can be applied in various ways, including gilding (thin layers of gold leaf applied to
+                    surfaces), gold plating on metals, and gold-infused paints. These techniques ensure longevity while
+                    maintaining the luxurious appearance of gold.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-item-header">
+                What are some famous architectural examples featuring gold?
+            </div>
+            <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                    <ul style="padding-left: 1rem;">
+                        <li>Golden Temple in Amritsar</li>
+                        <li>Dome of the Rock in Jerusalem</li>
+                        <li>Grand Palace in Bangkok</li>
+                        <li>interiors of Schönbrunn Palace in Austria</li>
+                        <li>Wat Phra Kaew, Bangkok, Thailand</li>
+                        <li>Palace of Versailles, France</li>
+                        <li>Kinkaku-ji (Golden Pavilion), Kyoto, Japan</li>
+                        <li>Alhambra, Granada, Spain</li>
+                        <li>St. Mark's Basilica, Venice, Italy</li>
+                        <li>Tilya-Kori Madrasah, Samarkand, Uzbekistan</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-item-header">
+                Is gold in architecture sustainable?
+            </div>
+            <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                    Yes, gold is a sustainable material. It is highly durable, resistant to corrosion, and recyclable.
+                    Advances in technology have also made it possible to use minimal amounts of gold for significant
+                    visual impact, reducing resource consumption.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-item-header">
+                How does gold affect modern architectural design?
+            </div>
+            <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                    In modern architecture, gold is used to add sophistication and luxury. It appears in facades,
+                    interiors, and accents, often paired with materials like glass, marble, and steel. Its use bridges
+                    traditional opulence with contemporary minimalism.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQ -->
+
+    <!--section-color -->
+    <div class="cg-section" id="colorgg">
+        <span id="dot1"></span>
+        <span id="dot2"></span>
+        <span id="dot3"></span>
+        <span id="dot4"></span>
+        <span id="dot5"></span>
+        <span id="dot6"></span>
+        <div class="color-container" id="colorContainer">
+            <button id="genNew">Click to get a Color</button>
+            <span id="colorGen"></span>
+            <button id="copyColorBtn">Copy Hex Code</button>
+            <audio id="copySound" src="img/success-221935 (1).mp3" preload="auto"></audio>
+            <p id="successMessage" style="display: none; color: green;">Awesome choice!</p>
+        </div>
+    </div>
+    <!--section-color -->
+
+    <!-- section-form -->
+     <div id="formgg"></div>
+    <div id="form-container">
+        <div id="left-col">
+            <video id="background-video" autoplay muted loop>
+                <source src="img/6101319-uhd_2160_4096_30fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div id="right-col">
+            <h1 id="form-title">Contact Form</h1>
+            <form id="contact-form">
+                <label for="form-name">Full Name</label>
+                <input type="text" id="form-name" name="name" placeholder="Your Full Name">
+
+                <label for="form-email">Email</label>
+                <input type="email" id="form-email" name="email" placeholder="Your Email">
+
+                <label for="form-message">Message</label>
+                <textarea id="form-message" name="message" placeholder="Your Message" rows="4"></textarea>
+
+                <button type="submit" id="form-submit">Submit</button>
+            </form>
+            <div id="form-error" class="form-message"></div>
+            <div id="form-success" class="form-message"></div>
+        </div>
+    </div>
+    <!-- section-form -->
+
+    <!-- footer -->
+<div style="width: 100%;height: 60px;
+background-color: #D4AF37; display: flex; justify-content: center; align-items: center;color: #355E3B; font-size: 14px;letter-spacing: 1px;">@2024,All Rights Reserved,TJ</div>
+    <!-- footer -->
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
